@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+h1 {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
 :root {
     --gray: #36393f;
     --dark-gray: #202225;
@@ -36,14 +41,26 @@ body {
 }
 
 .main {
-    
+    margin-top: 3.125rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .input-title {
     font-family: 'Nunito', sans-serif;
     color: white;
     font-weight: bolder;
+    font-size: 1.25rem
 }
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 
 #invite-link {
     font-family: 'Nunito', sans-serif;
@@ -54,8 +71,26 @@ body {
     border-radius: .5rem;
     border: none;
     outline: none;
+
+    width: 560px;
+    text-align: center;
+
+    padding: 8px 18px;
 }
 
 #invite-link:focus {
     outline: #5c6169 solid 2px;
+}
+
+#getInfoButton {
+    margin-top: 18px;
+
+    background-color: var(--blue);
+    padding: .625rem 2rem;
+    border-radius: 1rem;
+    border: #9ba3ff 2px solid;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: white;
 }
