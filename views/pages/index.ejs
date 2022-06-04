@@ -11,20 +11,37 @@
 
 <body>
     <header class="header">
-        <h1 class="title">Discord Invite Lookup</h1>
+        <h1 class="title" onclick="location.reload()">Discord Invite Lookup</h1>
     </header>
 
     <main class="main">
         <div class="input-label">
-            <label class="input-title" for="invite-link">Invite link</label>
-            <input id="invite-link" type="text" placeholder="https://discord.gg/Xe9UJtdP"
-                value="https://discord.gg/eHVNZDNC">
+            <label class="input-title" for="invite-link">Invite link:</label>
+            <input id="invite-link" type="text" placeholder="https://discord.gg/Xe9UJtdP">
         </div>
         <button id="getInfoButton">Get Info</button>
     </main>
     
     <div class="information">
-        
+
+        <div class="server-info hidden" id="serverInfoDiv">
+            <img width="150" id="serverIcon" src="" alt=""><br>
+            <div>
+                <span id="serverName"></span><br>
+                <span id="serverMembros"></span><br>
+                <span id="serverExpireAt"></span><br>
+                <span id="serverID"></span><br>
+                <span id="channelInviteFor"></span>
+            </div>
+        </div>
+        <div class="inviter-info hidden" id="inviterInfoDiv">
+            <img width="150" id="InviterIcon" src="" alt=""><br>
+            <div>
+                <span id="InviterTag"></span><br>
+                <span id="InviterID"></span>
+            </div>
+        </div>
+
     </div>
 
     <script src="/scripts/script.js"></script>

@@ -16,10 +16,11 @@ h1 {
     --gray: #36393f;
     --dark-gray: #202225;
     --blue: #7984fa;
+    --button: #5865f2;
 }
 
 .header {
-    background-color: var(--blue);
+    background-color: var(--button);
 
     width: 100%;
     display: flex;
@@ -31,6 +32,8 @@ h1 {
     font-family: 'Nunito', sans-serif;
     color: white;
     padding: .5rem;
+
+    cursor: pointer;
 }
 
 body {
@@ -46,9 +49,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .input-title {
+    padding-bottom: .5rem;
     font-family: 'Nunito', sans-serif;
     color: white;
     font-weight: bolder;
@@ -84,13 +89,60 @@ body {
 
 #getInfoButton {
     margin-top: 18px;
-
-    background-color: var(--blue);
     padding: .625rem 2rem;
     border-radius: 1rem;
-    border: #9ba3ff 2px solid;
+    border: none;
     font-family: 'Nunito', sans-serif;
     font-weight: bolder;
     font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#getInfoButton {
+    transition: 0.2s;
+    background-color: var(--button);
     color: white;
 }
+#getInfoButton:hover {
+    color: var(--button);
+    background-color: white;
+    transition: 0.2s;
+}
+
+
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    margin-top: 5rem;
+}
+
+.server-info, .inviter-info {
+    display: flex;
+    align-items: center;
+    gap: 1.125rem;
+
+    background-color: #2e3035;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.server-info span, .inviter-info span {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+
+}
+
+.server-info img, .inviter-info img {
+    border-radius: .5rem;
+}
+
+.hidden {
+    display: none;
+}
+
