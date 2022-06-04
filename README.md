@@ -1,1 +1,1 @@
-# discordInviteLookup
+# Discord Invite Lookup
