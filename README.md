@@ -10,7 +10,7 @@
 <h3 align="center">Discord Invite Lookup</h3>
 
   <p align="center">
-    An Discord Invite Analyzer to get some info about your invite.
+    A Discord Invite Analyzer to get some info about your invite.
 
 </div>
 
