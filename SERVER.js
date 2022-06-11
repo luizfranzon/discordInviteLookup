@@ -12,13 +12,11 @@ app.get("/", function (req, res) {
 });
 
 app.get("/invite/:invite", function(req, res) {
-
     discordInv.getInv(discordInv.getCodeFromUrl(req.params.invite)).then(invite => {
         res.json(invite)
     }).catch(err => {
         res.json(err)
     })
-
 });
 
 app.listen(port);
